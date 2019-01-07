@@ -12,6 +12,8 @@
 		2DCA58C921E36AB700DB414C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCA58C721E36AB700DB414C /* Main.storyboard */; };
 		2DCA58CB21E36AB700DB414C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCA58CA21E36AB700DB414C /* Assets.xcassets */; };
 		2DCA58CE21E36AB700DB414C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCA58CC21E36AB700DB414C /* LaunchScreen.storyboard */; };
+		2DCA58D621E36B5300DB414C /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA58D521E36B5300DB414C /* String+Utils.swift */; };
+		2DCA58D821E36BD900DB414C /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA58D721E36BD900DB414C /* UIView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2DCA58CA21E36AB700DB414C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DCA58CD21E36AB700DB414C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DCA58CF21E36AB700DB414C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCA58D521E36B5300DB414C /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		2DCA58D721E36BD900DB414C /* UIView+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				2DCA58CA21E36AB700DB414C /* Assets.xcassets */,
 				2DCA58CC21E36AB700DB414C /* LaunchScreen.storyboard */,
 				2DCA58CF21E36AB700DB414C /* Info.plist */,
+				2DCA58D521E36B5300DB414C /* String+Utils.swift */,
+				2DCA58D721E36BD900DB414C /* UIView+Utils.swift */,
 			);
 			path = CpfCnpjDataEntryMask;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				2DCA58C621E36AB700DB414C /* ViewController.swift in Sources */,
 				2DCA58C421E36AB700DB414C /* AppDelegate.swift in Sources */,
+				2DCA58D821E36BD900DB414C /* UIView+Utils.swift in Sources */,
+				2DCA58D621E36B5300DB414C /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
