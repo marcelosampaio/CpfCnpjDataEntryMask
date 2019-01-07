@@ -24,11 +24,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - UI Actions
     @IBAction func goAction(_ sender: Any) {
-        if (cpfCnpj.text?.isValidCnpj())! {
-            view.alert(msg: "👍 CNPJ OK !", sender: self)
-        }else{
-            view.alert(msg: "❌ CNPJ não válido!", sender: self)
+        
+        if cpfCnpj.text?.count == 14 {
+            // Masked CPF
+            if (cpfCnpj.text?.isValidCpf())! {
+                view.alert(msg: "👍 CPF OK !", sender: self)
+            }else{
+                view.alert(msg: "❌ CPF não válido!", sender: self)
+            }
+        }else if cpfCnpj.text?.count == 18 {
+            // Masked CNPJ
+            if (cpfCnpj.text?.isValidCnpj())! {
+                view.alert(msg: "👍 CNPJ OK !", sender: self)
+            }else{
+                view.alert(msg: "❌ CNPJ não válido!", sender: self)
+            }
+        }else {
+            view.alert(msg: "❌  Informe um CPF ou CNPJ válido!", sender: self)
         }
+
     }
     
     // MARK: - Text Field Delegate
@@ -64,13 +78,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 
             }
         }
-        
-        
-
+    
         updateTextField(updatedText)
-        
-        
-        print("👉 range location: \(range.location)")
+
         if range.location < 18 {
             return true
         }else{
